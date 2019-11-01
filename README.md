@@ -1,3 +1,32 @@
+
+# 源码分析
+
+## 文件结构
+
+``` bash
+/Users/liufang/openSource/FunnyLiu/ps-tree
+├── bin
+|  └── ps-tree.js - 调用index.js，将结果控制台输出
+├── index.js - 基于event-stream拿到指定子进程下所有子进程
+├── package-lock.json
+├── package.json
+
+directory: 2 file: 10
+
+ignored: directory (1)
+
+```
+
+## 外部模块依赖
+
+请在： http://npm.broofa.com?q=ps-tree 查看
+
+## 内部模块依赖
+
+![img](./inner.svg)
+  
+
+
 # ps-tree
 
 [![Build Status](https://travis-ci.org/indexzero/ps-tree.svg)](https://travis-ci.org/indexzero/ps-tree)

@@ -10,7 +10,7 @@ var ppid = 1;
 if (process.platform === 'win32') {
   ppid = 0;
 }
-
+// 调用index.js，将结果控制台输出
 require('../')(process.argv[2] || ppid, function (err, data) {
   console.log(data);
 });

@@ -81,11 +81,11 @@ module.exports = function childrenOfPid(pid, callback) {
     es.writeArray(function (err, ps) {
       var parents = {},
           children = [];
-
       parents[pid] = true;
       ps.forEach(function (proc) {
         if (parents[proc.PPID]) {
           parents[proc.PID] = true;
+          // 拿到所有子进程
           children.push(proc)
         }
       });
